@@ -10,8 +10,8 @@ const interest = document.querySelector(".interest");
 
 //Moving Animation Event
 container.addEventListener("mousemove", (e) => {
-	let xAxis = (window.innerWidth / 2 - e.pageX) / 10;
-	let yAxis = (window.innerHeight / 2 - e.pageY) / 10;
+	let xAxis = (window.innerWidth / 2 - e.pageX) / 40;
+	let yAxis = (window.innerHeight / 2 - e.pageY) / 40;
 	card.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`;
   });
 
