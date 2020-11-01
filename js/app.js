@@ -3,7 +3,7 @@ const card = document.querySelector(".card");
 const container = document.querySelector(".container");
 const title = document.querySelector(".title");
 const description = document.querySelector(".info h3");
-const sneaker = document.querySelector(".photo");
+const photo = document.querySelector(".photo");
 const socialmedia = document.querySelector(".socialmedia");
 
 // interest
@@ -21,11 +21,9 @@ container.addEventListener("mousemove", (e) => {
 	//Popout
 	title.style.transform = "translateZ(150px)";
 	socialmedia.style.transform  = "translateZ(150px)";
-	sneaker.style.transform = "translateZ(100px)";
+	photo.style.transform = "translateZ(100px)";
 	description.style.transform = "translateZ(125px)";
 	interest.style.transform = "translateZ(150px)"
-	// sizes.style.transform = "translateZ(100px)";
-	// purchase.style.transform = "translateZ(75px)";
   });
 
   container.addEventListener("mouseleave", (e) => {
@@ -34,11 +32,8 @@ container.addEventListener("mousemove", (e) => {
 	//Popback
 	title.style.transform = "translateZ(0px)";
 	socialmedia.style.transform  = "translateZ(0px)";
-	sneaker.style.transform = "translateZ(1px)";
+	photo.style.transform = "translateZ(1px)";
 	description.style.transform = "translateZ(0px)";
 	interest.style.transform = "translateZ(0px)";	
-
-	// sizes.style.transform = "translateZ(0px)";
-	// purchase.style.transform = "translateZ(0px)";
   });
 
