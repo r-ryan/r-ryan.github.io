@@ -4,6 +4,7 @@ const container = document.querySelector(".container");
 const title = document.querySelector(".title");
 const description = document.querySelector(".info h3");
 const sneaker = document.querySelector(".photo");
+const socialmedia = document.querySelector(".socialmedia");
 
 // interest
 const interest = document.querySelector(".interest");
@@ -19,6 +20,7 @@ container.addEventListener("mousemove", (e) => {
 	card.style.transition = "all 0.5s ease";
 	//Popout
 	title.style.transform = "translateZ(150px)";
+	socialmedia.style.transform  = "translateZ(150px)";
 	sneaker.style.transform = "translateZ(100px)";
 	description.style.transform = "translateZ(125px)";
 	interest.style.transform = "translateZ(150px)"
@@ -31,6 +33,7 @@ container.addEventListener("mousemove", (e) => {
 	card.style.transform = `rotateY(0deg) rotateX(0deg)`;
 	//Popback
 	title.style.transform = "translateZ(0px)";
+	socialmedia.style.transform  = "translateZ(0px)";
 	sneaker.style.transform = "translateZ(1px)";
 	description.style.transform = "translateZ(0px)";
 	interest.style.transform = "translateZ(0px)";	
