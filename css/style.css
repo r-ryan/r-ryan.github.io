@@ -10,6 +10,7 @@ body{
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	perspective: 1000px;
 }
 
 .container{
@@ -20,11 +21,12 @@ body{
 }
 
 .card{
+	transform-style: preserve-3d;
 	min-height: 80vh;
 	width: 35rem;
 	border-radius: 30px;
 	padding: 0rem 5rem;
-	box-shadow: 0 20px 20px rgba(0,0,0,0.2), 0px 0px 50px rgba(0,0,0,0.2)
+	box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
 }	
 .photo{
 	min-height: 35vh;
@@ -35,11 +37,13 @@ body{
 .photo img{
 	width: 9rem;
 	z-index: 2;
+	position: absolute;
 }
 
 .circle {
-	width: 15rem;
-	height: 15rem;
+	width: 10rem;
+	margin-left: 20%;
+	height: 10rem;
 	background: linear-gradient(
 		to right,
 		rgba(245,70,66,0.75),
@@ -57,4 +61,8 @@ body{
 	padding: 2rem 0rem;
 	color: #585858;
 	font-weight: lighter;
+}
+
+.description{
+	text-align: center;
 }
